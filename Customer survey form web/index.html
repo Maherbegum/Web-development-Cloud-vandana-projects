@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>CUSTOMER SURVEY FORM</title>
+    <h1>CUSTOMER SURVEY FORM</h1>
+    <style>
+        .survey-form {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .survey-form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: blue;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.survey-form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #333;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+h1{
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    background-color: #007BFF;
+    background-size: auto;
+    background-position: center;
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+.title{
+    align-content: center;
+    font-size: larger;
+    font-weight: bolder;
+    font: large;
+}
+
+label, input, select {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Style the gender checkboxes */
+input[type="checkbox"] {
+    display: inline;
+    margin-right: 5px;
+}
+
+button {
+    background: #2222ff;
+    color: #fff;
+    padding: 12px 24
+
+label, input, select {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* Style the gender checkboxes */
+input[type="checkbox"] {
+    display: inline;
+    margin-right: 5px;
+}
+
+button {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Styling for the popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.popup-content {
+    background: #fff;
+    width: 80%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Close button for the popup */
+#closePopup {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3
+
+
+        label, input, select, textarea {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+
+        .popup-content {
+            background: #ffffff;
+            width: 80%;
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="survey-form">
+        <form id="surveyForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required>
+
+            <label for="country">Country:</label>
+            <select id="country" required>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="UK">UK</option>
+                <option value="UAE">UAE</option>
+                <option value="Africa">Africa</option>
+                <option value="Australia">Australia</option>
+                <option value="Germany">Germany</option>
+                <option value="France">France</option>
+                <option value="India">India</option>
+                <option value="China">China</option>
+                <option value="South Korea">South Korea</option>
+                <option value="Japan">Japan</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="Agfhanistan">Afghanistan</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Cuba">Cuba</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Uzbekistan">Uzbekistan</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Bulgaria">Bulgaria</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Austria">Austria</option>
+                <option value="Albania">Albania</option>
+                <option value="Cambodia">Cambodia</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Iran">Iran</option>
+                <option value="Iraq">Iraq</option>
+                <option value="Egypt">Egypt</option>
+                <option value="Cameroon">Cameroon</option>
+                <option value="Croatia">Croatia</option>
+                <option value="Armenia">Armenia</option>
+                <option value="Chile">Chile</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Finland">Finland</option>
+                <option value="Russia">Russia</option>
+                <option value="Greece">Greece</option>
+                <option value="Spain">Spain</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Jordan">Jordan</option>
+                <option value="Kazakhstan">Kazakhstan</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Serbia">Serbia</option>
+                <option value="Kuwait">Kuwait</option>
+                <option value="Lebanon">Lebanon</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Morocco">Morocco</option>
+                <option value="Monaco">Monaco</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Norway">Norway</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="Oman">Oman</option>
+                <option value="Qatar">Qatar</option>
+                <option value="Poland">Poland</option>
+                <option value="Phillipines">Phillipines</option>
+                <option value="Romania">Romania</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Sudan">Sudan</option>
+                <option value="Syria">Syria</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Somalia">Somalia</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Tunisia">Tunisia</option>
+                <option value="Tajikistan">Tajikistan</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Yemen">Yemen</option>
+                <option value="Zambia">Zambia</option>
+                <option value="Zimbawbe">Zimbawbe</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Slovakia">Slovakia</option>
+                <option value="Maldives">Maldives</option>
+                <option value="Saint Lucia">Saint Lucia</option>
+                <option value="Mali">Mali</option>
+                <option value="Madagascar">Madagascar</option>
+                
+
+                <!-- Add more countries as needed -->
+            </select>
+
+            <label>Gender:</label>
+            <input type="checkbox" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="checkbox" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+
+            <label for="profession">Profession:</label>
+            <input type="text" id="profession" required>
+
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" required>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" required>
+
+            <button type="button" id="submitBtn">Submit</button>
+            <button type="button" id="resetBtn">Reset</button>
+        </form>
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h2>Survey Response</h2>
+            <p id="popupContent"></p>
+            <button id="closePopup">Close</button>
+        </div>
+    </div>
+
+    <script>
+        const surveyForm = document.getElementById("surveyForm");
+        const popup = document.getElementById("popup");
+        const popupContent = document.getElementById("popupContent");
+        const closePopup = document.getElementById("closePopup");
+
+        document.getElementById("submitBtn").addEventListener("click", function () {
+            if (surveyForm.checkValidity()) {
+                const firstName = document.getElementById("firstName").value;
+                const lastName = document.getElementById("lastName").value;
+                const dob = document.getElementById("dob").value;
+                const country = document.getElementById("country").value;
+                const gender = [...document.querySelectorAll('input[name="gender"]:checked')].map(checkbox => checkbox.value).join(', ');
+                const profession = document.getElementById("profession").value;
+                const email = document.getElementById("email").value;
+                const mobile = document.getElementById("mobile").value;
+
+                const response = `
+                    First Name: ${firstName}
+                    Last Name: ${lastName}
+                    Date of Birth: ${dob}
+                    Country: ${country}
+                    Gender: ${gender}
+                    Profession: ${profession}
+                    Email: ${email}
+                    Mobile Number: ${mobile}
+                `;
+
+                popupContent.textContent = response;
+                popup.style.display = "block";
+            }
+        });
+
+        document.getElementById("resetBtn").addEventListener("click", function () {
+            surveyForm.reset();
+        });
+
+        closePopup.addEventListener("click", function () {
+            popup.style.display = "none";
+            surveyForm.reset();
+        });
+    </script>
+</body>
+</html>
